@@ -19,11 +19,7 @@ const Signup = () => {
     const password = e.target.password?.value;
 
     console.log("signup function entered", { email, password });
-    // console.log(password.length);
-    // if (password.length < 6) {
-    //   toast.error("Password should be at least 6 digit");
-    //   return;
-    // }
+
 
     const regExp =
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#^()\-_=+])[A-Za-z\d@$!%*?&#^()\-_=+]{8,}$/;
@@ -41,6 +37,7 @@ const Signup = () => {
       .then((res) => {
         console.log(res);
         toast.success("Signup successful");
+        e.target.reset();
       })
       .catch((e) => {
         console.log(e);
