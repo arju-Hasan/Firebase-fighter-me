@@ -81,7 +81,8 @@ const Signin = () => {
             </h1>
             <p className="mt-4 text-lg text-white/80 leading-relaxed">
               Sign in to continue your journey. Manage your account, explore new
-              features, and more.
+              features, and more. This is a not just a failed attempt to create a
+              user-friendly interface.
             </p>
           </div>
 
